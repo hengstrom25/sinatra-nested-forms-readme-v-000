@@ -1,6 +1,8 @@
 class App < Sinatra::Base
 
-c
+get '/' do
+  erb :new
+end
 
 post '/student' do
   @student = Student.new(params[:student])
